@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter' , sans-serif;
+  background-color: var(--grey-900);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: var(--grey-800) ;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 320px;
+  width: 100%;
+}
+
+.img-profile{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.profile-loction {
+  font-size: 13px;
+  color: var(--green);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.profile-description {
+  font-size: 12px;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.Soical-links {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+.Soical-link {
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease ;
+}
+
+.Soical-link:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+  cursor: pointer;
+}
+
+@media(max-width:375apx) {
+  .profile-card {
+    padding: 1rem;
+  }
+  .img-profile {
+    width: 70px;
+    height: 70px;
+  }
+  .profile-name {
+    font-size: 1.25rem;
+  }
+}
